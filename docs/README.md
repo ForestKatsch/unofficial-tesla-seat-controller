@@ -24,6 +24,6 @@ TODO
 
 ## Mounting
 
-I designed and 3D-printed standoffs that elevate my Model S refresh seat track rails above the built-in alignment pins.
+I designed and 3D-printed standoffs that elevate my Model S (refresh) seat track rails above the built-in alignment pins. These will likely not work with other seats.
 
 TODO
