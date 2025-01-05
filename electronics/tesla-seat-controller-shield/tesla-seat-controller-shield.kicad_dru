@@ -1,0 +1,5 @@
+(version 1)
+(rule exempt_from_courtyard_overlap
+	(condition "A.Reference == 'A1' || B.Reference == 'A1'")
+	(constraint courtyard_clearance (min -100mm))
+)
