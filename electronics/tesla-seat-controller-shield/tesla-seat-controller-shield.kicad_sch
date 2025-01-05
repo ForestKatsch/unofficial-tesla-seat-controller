@@ -2241,7 +2241,7 @@
 	)
 	(wire
 		(pts
-			(xy 233.68 76.2) (xy 233.68 88.9)
+			(xy 233.68 86.36) (xy 233.68 88.9)
 		)
 		(stroke
 			(width 0)
@@ -2341,16 +2341,6 @@
 	)
 	(wire
 		(pts
-			(xy 234.95 76.2) (xy 233.68 76.2)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "3611dc49-8eef-412e-9db8-c215e6acf8fd")
-	)
-	(wire
-		(pts
 			(xy 58.42 60.96) (xy 69.85 60.96)
 		)
 		(stroke
@@ -2388,6 +2378,16 @@
 			(type default)
 		)
 		(uuid "4d71afab-e6dd-43c9-8540-ab17f9f633f0")
+	)
+	(wire
+		(pts
+			(xy 233.68 86.36) (xy 234.95 86.36)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5587dea9-cf03-4585-9907-facf6019f138")
 	)
 	(wire
 		(pts
@@ -3555,8 +3555,7 @@
 	)
 	(symbol
 		(lib_id "Connector:Conn_01x04_Pin")
-		(at 240.03 78.74 0)
-		(mirror y)
+		(at 240.03 83.82 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -3564,7 +3563,7 @@
 		(dnp no)
 		(uuid "532a6e5d-a9c0-4088-9c24-c5c0eb1b0ef3")
 		(property "Reference" "J5"
-			(at 241.3 78.7399 0)
+			(at 241.3 83.8201 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3573,7 +3572,7 @@
 			)
 		)
 		(property "Value" "Switchpack"
-			(at 241.3 81.2799 0)
+			(at 241.3 81.2801 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3582,7 +3581,7 @@
 			)
 		)
 		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical"
-			(at 240.03 78.74 0)
+			(at 240.03 83.82 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3591,7 +3590,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 240.03 78.74 0)
+			(at 240.03 83.82 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3600,7 +3599,7 @@
 			)
 		)
 		(property "Description" "Generic connector, single row, 01x04, script generated"
-			(at 240.03 78.74 0)
+			(at 240.03 83.82 0)
 			(effects
 				(font
 					(size 1.27 1.27)

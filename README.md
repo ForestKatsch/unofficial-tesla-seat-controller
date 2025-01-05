@@ -8,9 +8,8 @@ I built a simracing rig, and I discovered that used Tesla seats in good conditio
 
 ## How?
 
-- [**Instructions**](docs/) (start here)
-- [Switchpack](docs/switchpack.md)
-- [PCB assembly and BOM](docs/pcba.md)
+- [**Instructions**](docs/instructions.md) (start here)
+- [Switchpack reverse-engineering](docs/switchpack.md)
 
 ## Changelog
 
