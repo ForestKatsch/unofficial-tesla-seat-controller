@@ -58,7 +58,10 @@
           "width": 0.0
         }
       ],
-      "drc_exclusions": [],
+      "drc_exclusions": [
+        "lib_footprint_mismatch|133477000|94234000|9d68d837-0c26-4bea-9a84-d7a8a2263954|00000000-0000-0000-0000-000000000000",
+        "starved_thermal|145542000|118364000|a85d3a55-5ba7-4a07-882e-f0c460b30221|64374765-02d8-47c8-b6bb-e1a3d2324525|F.Cu"
+      ],
       "meta": {
         "version": 2
       },
@@ -503,7 +506,7 @@
       "gencad": "",
       "idf": "",
       "netlist": "",
-      "plot": "",
+      "plot": "plots/",
       "pos_files": "",
       "specctra_dsn": "",
       "step": "tesla-seat-controller-shield.step",

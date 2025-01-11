@@ -2166,6 +2166,10 @@
 		(uuid "6eff995b-0315-41ab-8372-c1f7d469ad35")
 	)
 	(no_connect
+		(at 132.08 48.26)
+		(uuid "9316929e-63b5-4430-9e60-4a5212792a95")
+	)
+	(no_connect
 		(at 147.32 73.66)
 		(uuid "99943134-6c3c-461c-9769-cbc61e796a12")
 	)
@@ -2711,16 +2715,6 @@
 	)
 	(wire
 		(pts
-			(xy 132.08 41.91) (xy 132.08 48.26)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ea4ac220-9eae-4fc2-b9c1-37425833be7c")
-	)
-	(wire
-		(pts
 			(xy 181.61 83.82) (xy 181.61 87.63)
 		)
 		(stroke
@@ -3145,72 +3139,6 @@
 			(project ""
 				(path "/24f488f1-5e6b-4fe6-984e-19086c29a5ad"
 					(reference "R1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:+12V")
-		(at 132.08 41.91 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "3346700b-3a53-4200-869c-740668349ab2")
-		(property "Reference" "#PWR03"
-			(at 132.08 45.72 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "+12V"
-			(at 132.08 36.83 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 132.08 41.91 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 132.08 41.91 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+12V\""
-			(at 132.08 41.91 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "b7686108-05a2-4db1-805b-f8aeac6b30fd")
-		)
-		(instances
-			(project ""
-				(path "/24f488f1-5e6b-4fe6-984e-19086c29a5ad"
-					(reference "#PWR03")
 					(unit 1)
 				)
 			)
