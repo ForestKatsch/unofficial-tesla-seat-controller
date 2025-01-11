@@ -4315,8 +4315,7 @@
 	)
 	(symbol
 		(lib_id "Connector:Screw_Terminal_01x02")
-		(at 85.09 120.65 0)
-		(mirror x)
+		(at 85.09 118.11 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4324,7 +4323,7 @@
 		(dnp no)
 		(uuid "fa250853-3268-47f4-823e-1f78f734944a")
 		(property "Reference" "J2"
-			(at 87.63 120.6501 0)
+			(at 87.63 118.1099 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4333,7 +4332,7 @@
 			)
 		)
 		(property "Value" "Motor Driver"
-			(at 87.63 118.1101 0)
+			(at 87.63 120.6499 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4342,7 +4341,7 @@
 			)
 		)
 		(property "Footprint" "TerminalBlock:TerminalBlock_bornier-2_P5.08mm"
-			(at 85.09 120.65 0)
+			(at 85.09 118.11 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4351,7 +4350,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 85.09 120.65 0)
+			(at 85.09 118.11 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4360,7 +4359,7 @@
 			)
 		)
 		(property "Description" "Generic screw terminal, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
-			(at 85.09 120.65 0)
+			(at 85.09 118.11 0)
 			(effects
 				(font
 					(size 1.27 1.27)
