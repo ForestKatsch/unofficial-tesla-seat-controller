@@ -32,3 +32,6 @@ fp-info-cache
 
 # Platform-specific files
 .DS_Store
+
+/electronics/tesla-seat-controller-shield/plots/
+/electronics/tesla-seat-controller-shield/plots.zip
