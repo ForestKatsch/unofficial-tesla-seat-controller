@@ -10,27 +10,14 @@ MotorDriver motor_lift(10, 12);
 MotorDriver motor_track(9, 8);
 MotorDriver motor_tilt(11, 13);
 
-SwitchPackWire lumbar(A2);
-SwitchPackWire track_backrest(A3);
-SwitchPackWire lift_tilt(A4);
+SwitchPackWire track_backrest(A2);
+SwitchPackWire lift_tilt(A3);
+SwitchPackWire lumbar(A4);
 
-FanDriver fan_lower();
+FanDriver fan_lower(11);
+FanDriver fan_upper(12);
 
-/////////
-// FANS
-
-/*
-void runFan(uint8_t pin_pwm, uint8_t speed) { analogWrite(pin_pwm, speed); }
-
-void setupFan(uint8_t pin_pwm) {
-  pinMode(pin_pwm, OUTPUT);
-  runFan(pin_pwm, 0);
-}
-
-void setupFans() {
-  setupFan(PIN_FAN_UPPER_PWM);
-  setupFan(PIN_FAN_LOWER_PWM);
-}
+// Fan global speed control
 
 #define FAN_SPEED_OFF (0)
 #define FAN_SPEED_LOW (1)
@@ -40,20 +27,22 @@ void setupFans() {
 #define FAN_SPEED_MIN FAN_SPEED_OFF
 #define FAN_SPEED_MAX FAN_SPEED_HIGH
 
-int8_t fanSpeed = FAN_SPEED_OFF;
+int8_t fan_setting = FAN_SPEED_OFF;
 
 void fanSpeedOffset(int8_t by) {
-  if (fanSpeed == FAN_SPEED_MIN && by < 0) {
+  // Bounds check.
+  if (fan_setting == FAN_SPEED_MIN && by < 0) {
     return;
-  } else if (fanSpeed == FAN_SPEED_MAX && by > 0) {
+  } else if (fan_setting == FAN_SPEED_MAX && by > 0) {
     return;
   }
 
-  fanSpeed += by;
+  fan_setting += by;
 }
 
 const uint8_t fan_pwm[FAN_SPEED_MAX + 1] = {0, 72, 128, 255};
-*/
+
+// Helpers
 
 void readSwitches() {
   lift_tilt.read();
@@ -62,22 +51,28 @@ void readSwitches() {
 }
 
 void runMotors() {
-  motor_backrest.setSpeed(track_backrest.pressed & SWITCH_BACKREST_FORWARD ? 255
-                          : track_backrest.pressed & SWITCH_BACKREST_REARWARD
-                              ? -255
-                              : 0);
-  motor_tilt.setSpeed(lift_tilt.pressed & SWITCH_TILT_DOWN ? 255
-                      : lift_tilt.pressed & SWITCH_TILT_UP ? -255
-                                                           : 0);
-  motor_lift.setSpeed(lift_tilt.pressed & SWITCH_LIFT_DOWN ? 255
-                      : lift_tilt.pressed & SWITCH_LIFT_UP ? -255
-                                                           : 0);
-  motor_track.setSpeed(track_backrest.pressed & SWITCH_TRACK_FORE  ? 255
-                       : track_backrest.pressed & SWITCH_TRACK_AFT ? -255
-                                                                   : 0);
+ motor_backrest.setSpeed(track_backrest.pressed & SWITCH_BACKREST_FORWARD ? 255
+                         : track_backrest.pressed & SWITCH_BACKREST_REARWARD
+                             ? -255
+                             : 0);
+ motor_tilt.setSpeed(lift_tilt.pressed & SWITCH_TILT_DOWN ? 255
+                     : lift_tilt.pressed & SWITCH_TILT_UP ? -255
+                                                          : 0);
+ motor_lift.setSpeed(lift_tilt.pressed & SWITCH_LIFT_DOWN ? 255
+                     : lift_tilt.pressed & SWITCH_LIFT_UP ? -255
+                                                          : 0);
+ motor_track.setSpeed(track_backrest.pressed & SWITCH_TRACK_FORE  ? 255
+                      : track_backrest.pressed & SWITCH_TRACK_AFT ? -255
+                                                                  : 0);
 }
 
-// the setup function runs once when you press reset or power the board
+void runFans() {
+  fan_lower.setSpeed(fan_pwm[fan_setting]);
+  fan_upper.setSpeed(fan_pwm[fan_setting]);
+}
+
+// Setup + loop
+
 void setup() {
 #if DEBUG
   delay(500);
@@ -86,9 +81,6 @@ void setup() {
   Serial.print("Logs working");
   Serial.println();
 #endif
-  // setupMotors();
-  // setupFans();
-  // setupSwitches();
 }
 
 // the loop function runs over and over again forever
@@ -98,14 +90,11 @@ void loop() {
   readSwitches();
   runMotors();
 
-  /*
-    if (lumbar_up.just_released) {
-      fanSpeedOffset(1);
-    } else if(lumbar_down.just_released) {
-      fanSpeedOffset(-1);
-    }
+  if (lumbar_up.just_released) {
+    fanSpeedOffset(1);
+  } else if(lumbar_down.just_released) {
+    fanSpeedOffset(-1);
+  }
 
-    // runMotors();
-    runFans();
-    */
+  runFans();
 }
