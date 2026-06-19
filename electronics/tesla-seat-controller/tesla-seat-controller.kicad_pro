@@ -36,7 +36,40 @@
     "equivalence_files": []
   },
   "erc": {
-    "erc_exclusions": [],
+    "erc_exclusions": [
+      [
+        "pin_to_pin|1346200|355600|2cf5405c-c8e6-4cf6-89d4-3cad5df35ad6|a726a8a4-4318-4dfd-ac2f-205be901cf45|/87de105c-bd4e-4c53-a8bc-f3ad29be4a44/3550ff87-d9a8-462c-865a-d3465b3574b6|/87de105c-bd4e-4c53-a8bc-f3ad29be4a44/3550ff87-d9a8-462c-865a-d3465b3574b6|/87de105c-bd4e-4c53-a8bc-f3ad29be4a44/3550ff87-d9a8-462c-865a-d3465b3574b6",
+        ""
+      ],
+      [
+        "pin_to_pin|1346200|381000|a726a8a4-4318-4dfd-ac2f-205be901cf45|51f0f34e-ed23-41c6-89aa-2fe13731611f|/87de105c-bd4e-4c53-a8bc-f3ad29be4a44/3550ff87-d9a8-462c-865a-d3465b3574b6|/87de105c-bd4e-4c53-a8bc-f3ad29be4a44/3550ff87-d9a8-462c-865a-d3465b3574b6|/87de105c-bd4e-4c53-a8bc-f3ad29be4a44/3550ff87-d9a8-462c-865a-d3465b3574b6",
+        ""
+      ],
+      [
+        "pin_to_pin|1346200|431800|ed16d429-7789-40cd-a124-62df2798ef56|50ba3298-a773-44a1-8da9-ba4eea45c27d|/87de105c-bd4e-4c53-a8bc-f3ad29be4a44/3550ff87-d9a8-462c-865a-d3465b3574b6|/87de105c-bd4e-4c53-a8bc-f3ad29be4a44/3550ff87-d9a8-462c-865a-d3465b3574b6|/87de105c-bd4e-4c53-a8bc-f3ad29be4a44/3550ff87-d9a8-462c-865a-d3465b3574b6",
+        ""
+      ],
+      [
+        "pin_to_pin|1346200|457200|50ba3298-a773-44a1-8da9-ba4eea45c27d|c4a88c3f-3b81-4ac1-b716-919762c9c965|/87de105c-bd4e-4c53-a8bc-f3ad29be4a44/3550ff87-d9a8-462c-865a-d3465b3574b6|/87de105c-bd4e-4c53-a8bc-f3ad29be4a44/3550ff87-d9a8-462c-865a-d3465b3574b6|/87de105c-bd4e-4c53-a8bc-f3ad29be4a44/3550ff87-d9a8-462c-865a-d3465b3574b6",
+        ""
+      ],
+      [
+        "pin_to_pin|1346200|508000|90c13df8-8b62-413d-9efa-6fcc44fe1a0f|01ca217c-5789-44d3-81d1-e84bc9981fb5|/87de105c-bd4e-4c53-a8bc-f3ad29be4a44/3550ff87-d9a8-462c-865a-d3465b3574b6|/87de105c-bd4e-4c53-a8bc-f3ad29be4a44/3550ff87-d9a8-462c-865a-d3465b3574b6|/87de105c-bd4e-4c53-a8bc-f3ad29be4a44/3550ff87-d9a8-462c-865a-d3465b3574b6",
+        ""
+      ],
+      [
+        "pin_to_pin|1346200|533400|01ca217c-5789-44d3-81d1-e84bc9981fb5|747ba387-6e37-4cf5-820c-6e50b6a44a3a|/87de105c-bd4e-4c53-a8bc-f3ad29be4a44/3550ff87-d9a8-462c-865a-d3465b3574b6|/87de105c-bd4e-4c53-a8bc-f3ad29be4a44/3550ff87-d9a8-462c-865a-d3465b3574b6|/87de105c-bd4e-4c53-a8bc-f3ad29be4a44/3550ff87-d9a8-462c-865a-d3465b3574b6",
+        ""
+      ],
+      [
+        "pin_to_pin|1346200|584200|bf26bae2-62f3-492d-b01c-a2c6f3422177|0e5fedb3-0657-4c66-b5ca-276373cb92cc|/87de105c-bd4e-4c53-a8bc-f3ad29be4a44/3550ff87-d9a8-462c-865a-d3465b3574b6|/87de105c-bd4e-4c53-a8bc-f3ad29be4a44/3550ff87-d9a8-462c-865a-d3465b3574b6|/87de105c-bd4e-4c53-a8bc-f3ad29be4a44/3550ff87-d9a8-462c-865a-d3465b3574b6",
+        ""
+      ],
+      [
+        "pin_to_pin|1346200|609600|0e5fedb3-0657-4c66-b5ca-276373cb92cc|bc0f1ea6-cbed-4866-923e-5cb4efcb1043|/87de105c-bd4e-4c53-a8bc-f3ad29be4a44/3550ff87-d9a8-462c-865a-d3465b3574b6|/87de105c-bd4e-4c53-a8bc-f3ad29be4a44/3550ff87-d9a8-462c-865a-d3465b3574b6|/87de105c-bd4e-4c53-a8bc-f3ad29be4a44/3550ff87-d9a8-462c-865a-d3465b3574b6",
+        ""
+      ]
+    ],
     "meta": {
       "version": 0
     },
@@ -437,13 +470,21 @@
         "uuid": "87de105c-bd4e-4c53-a8bc-f3ad29be4a44"
       }
     ],
-    "used_designators": "#PWR20-21,J3",
+    "used_designators": "C37,R15-18,#FLG2-3,#PWR20-21,#PWR23,#PWR40-42",
     "variants": []
   },
   "sheets": [
     [
       "87de105c-bd4e-4c53-a8bc-f3ad29be4a44",
       "tesla-seat-controller"
+    ],
+    [
+      "3550ff87-d9a8-462c-865a-d3465b3574b6",
+      "Motor Driver AB"
+    ],
+    [
+      "d525d3e9-ab78-46a4-afff-b4f118420ad4",
+      "Motor Driver CD"
     ]
   ],
   "text_variables": {},

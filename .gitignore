@@ -1,6 +1,9 @@
 # For PCBs designed using KiCad: https://www.kicad.org/
 # Format documentation: https://kicad.org/help/file-formats/
 
+# Editor local history (VSCode Local History extension)
+.history/
+
 # Temporary files
 *.000
 *.bak
