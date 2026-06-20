@@ -6165,6 +6165,10 @@
 		(uuid "12a2a122-f875-48a4-b090-4a9defa30f5a")
 	)
 	(no_connect
+		(at 43.18 83.82)
+		(uuid "169f42ae-2c65-4cf3-8823-01539eb05229")
+	)
+	(no_connect
 		(at 104.14 114.3)
 		(uuid "1821c6e5-69dc-49d7-b986-21a404fcfc94")
 	)
@@ -7698,16 +7702,6 @@
 	)
 	(wire
 		(pts
-			(xy 43.18 83.82) (xy 58.42 83.82)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "8a3e6897-1f4e-4621-b7c4-01b2fc949b47")
-	)
-	(wire
-		(pts
 			(xy 31.75 124.46) (xy 27.94 124.46)
 		)
 		(stroke
@@ -8995,16 +8989,6 @@
 			(justify left bottom)
 		)
 		(uuid "44dd52db-bee2-4870-99cb-b14ec8e49fc3")
-	)
-	(label "usb_vin"
-		(at 58.42 83.82 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "477527fc-4aa0-4522-9b7b-6b093f359cb1")
 	)
 	(label "SWDIO"
 		(at 38.1 144.78 180)
