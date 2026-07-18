@@ -3596,7 +3596,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_AMASS:AMASS_XT30PW-F_1x02_P2.50mm_Horizontal"
 			(at 217.17 63.5 0)
 			(hide yes)
 			(show_name no)
@@ -3679,7 +3679,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 137.16 104.14 0)
 			(hide yes)
 			(show_name no)
@@ -3762,7 +3762,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 48.26 48.26 0)
 			(hide yes)
 			(show_name no)
@@ -3848,7 +3848,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
 			(at 76.2 143.51 0)
 			(hide yes)
 			(show_name no)
@@ -4180,7 +4180,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_AMASS:AMASS_XT30PW-F_1x02_P2.50mm_Horizontal"
 			(at 217.17 38.1 0)
 			(hide yes)
 			(show_name no)
@@ -4430,7 +4430,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 238.76 96.52 0)
 			(hide yes)
 			(show_name no)
@@ -4513,7 +4513,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
 			(at 60.96 76.2 0)
 			(hide yes)
 			(show_name no)
@@ -4599,7 +4599,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 250.19 96.52 0)
 			(hide yes)
 			(show_name no)
@@ -4769,7 +4769,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 50.8 144.78 0)
 			(hide yes)
 			(show_name no)
@@ -4855,7 +4855,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
 			(at 76.2 151.13 0)
 			(hide yes)
 			(show_name no)
@@ -5274,7 +5274,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "100uF"
+		(property "Value" "220uF 35V polymer"
 			(at 228.6 97.7962 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5285,7 +5285,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:CP_Elec_10x10.5"
 			(at 226.06 96.52 0)
 			(hide yes)
 			(show_name no)
@@ -5717,7 +5717,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 63.5 144.78 0)
 			(hide yes)
 			(show_name no)
@@ -5801,7 +5801,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
 			(at 63.5 76.2 0)
 			(hide yes)
 			(show_name no)
@@ -6051,7 +6051,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
 			(at 99.06 81.28 0)
 			(hide yes)
 			(show_name no)

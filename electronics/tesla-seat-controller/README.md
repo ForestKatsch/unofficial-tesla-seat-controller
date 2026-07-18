@@ -13,7 +13,7 @@ Grug board has own brain. Brain is STM32. Board takes 12 V. Board makes 3.3 V. B
 | `U3`, `U4` | DRV8262DDVR | dual H-bridge motor drivers, top thermal pad (heatsink), 10 A RMS / 16 A peak per output | [DRV8262](https://www.ti.com/lit/ds/symlink/drv8262.pdf) |
 | `Q1` | IPD90P03P4L-04 | P-MOSFET reverse battery rock | [IPD90P03P4L-04](https://www.infineon.com/dgdl/Infineon-IPD90P03P4L-04-DataSheet-v01_01-EN.pdf?fileId=db3a30431ddc9372011e07e8373a27c4) |
 | `Q2`, `Q3` | 2N7002 | fan PWM pull-down FETs | [2N7002](https://assets.nexperia.com/documents/data-sheet/2N7002.pdf) |
-| `D1` | BZX84C12 | 12 V zener, protects Q1 gate (Q1 V_GS max is +5/−16 V, so 12 V leaves margin) | [BZX84 series](https://assets.nexperia.com/documents/data-sheet/BZX84_SER.pdf) |
+| `D1` | BZT52C12 | 12 V zener (SOD-123), protects Q1 gate (Q1 V_GS max is +5/−16 V, so 12 V leaves margin) | [BZT52 series](https://assets.nexperia.com/documents/data-sheet/BZT52_SER.pdf) |
 | `D2` | SMBJ16A | TVS on 12 V rail | [SMBJ series](https://www.vishay.com/docs/88392/smbj.pdf) |
 | `J4` | TC2030 | SWD programming pokey thing | [TC2030-IDC-NL](https://www.tag-connect.com/wp-content/uploads/bsk-pdf-manager/2019/12/TC2030-IDC-NL-Datasheet-Rev-B.pdf) |
 
@@ -134,6 +134,18 @@ This makes fan see 0 V / 12 V PWM.
 Maybe correct. Maybe smoke. Need fan datasheet or measure real fan input.
 
 STM32 itself is safe because STM32 only touches 2N7002 gate at 3.3 V.
+
+## BOM ordering notes (2026-07-17 footprint pass)
+
+Board is DIY reflow: stencil (0.1 mm / 4 mil stainless), paste, oven. No exposed-pad parts anywhere. Connectors are all side-exit; hand-solder the XT30s after reflow.
+
+- All 0805 caps (100 nF, 10 nF, 1 uF, 4.7 uF): buy **X7R 50 V** across the board — the 12 V rail can see ~26 V during TVS clamp, and one reel per value keeps the BOM short.
+- `C3` 10 uF: 1206, **50 V** X7R. `C4`/`C5` 22 uF: 1206, 16–25 V X5R (3.3 V rail, DC bias is easy).
+- `C17`/`C24` 220 uF 35 V polymer hybrid, 10 × 10.2 mm can, e.g. Panasonic **EEH-ZA1V221P**. Positive terminal (pin 1) is on `+12V`.
+- All resistors 0805 1%. `R8`/`R9`/`R13`/`R14` (1.00 k IPROPI) matter for current-sense accuracy.
+- `L1`: Bourns **SRN6045TA-3R9Y** (3.9 uH, shielded, Isat ~5 A).
+- `F1`: Keystone **3568** mini-blade holder + 10 A mini blade fuse to start.
+- Connectors: `J1` XT30PW-M (board input is male; source pigtail female), `J6`–`J9` XT30PW-F (board is live source), `J2`/`J3` JST **S3B-XH-A**, `J5` JST **S4B-XH-A** (all side-entry).
 
 ## Grug TODO
 
