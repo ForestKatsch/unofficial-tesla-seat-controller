@@ -24,17 +24,21 @@ fp-info-cache
 
 # Netlist files (exported from Eeschema)
 *.net
+*.kicad_net
 
 # Autorouter files (exported from Pcbnew)
 *.dsn
 *.ses
 
-# Exported BOM files
+# Exported BOM/report files
 *.xml
 *.csv
+*.rpt
 
 # Platform-specific files
 .DS_Store
 
 /electronics/tesla-seat-controller-shield/plots/
 /electronics/tesla-seat-controller-shield/plots.zip
+# Python
+__pycache__/
