@@ -35,6 +35,9 @@ fp-info-cache
 *.csv
 *.rpt
 
+# Downloaded part datasheets (see datasheets/SOURCES.md for provenance)
+/datasheets/
+
 # Platform-specific files
 .DS_Store
 
