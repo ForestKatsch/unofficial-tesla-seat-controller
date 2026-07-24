@@ -1,4 +1,0 @@
-(fp_lib_table
-  (version 7)
-  (lib (name "tesla-seat-controller")(type "KiCad")(uri "${KIPRJMOD}/libraries/tesla-seat-controller.pretty")(options "")(descr "Project-specific footprints"))
-)

@@ -45,3 +45,6 @@ fp-info-cache
 /electronics/tesla-seat-controller-shield/plots.zip
 # Python
 __pycache__/
+
+# KiCad restore-point backups
+electronics/tesla-seat-controller/_restore_backup_*/
